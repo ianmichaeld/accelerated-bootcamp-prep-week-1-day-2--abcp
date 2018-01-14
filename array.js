@@ -1,6 +1,6 @@
 function addElementToBeginningOfArray(array, element) {
  // add the element to the beginning of the array without mutating the array
-  var a = [...array];
+  var a = [element, ...array];
   a.unshift(element)
   return a;
 }
