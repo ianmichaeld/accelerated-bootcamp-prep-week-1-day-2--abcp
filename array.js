@@ -1,7 +1,6 @@
 function addElementToBeginningOfArray(array, element) {
  // add the element to the beginning of the array without mutating the array
   var a = [element, ...array];
-  a.unshift(element)
   return a;
 }
 
@@ -12,8 +11,7 @@ function destructivelyAddElementToBeginningOfArray(array, element){
 }
 
 function addElementToEndOfArray(array, element) {
-  var a = [...array];
-  a.push(element);
+  var a = [...array, element];
   return a;
 }
 
